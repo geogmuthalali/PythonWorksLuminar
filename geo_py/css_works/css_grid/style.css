@@ -1,0 +1,43 @@
+/* grid */
+
+/* fr-fraction */
+/* grid-column-gap -> is used to give gap in between the columns */
+
+*{
+    margin: 0;
+}
+
+
+.row{
+    width: 80%;
+    min-height: 700px;
+    background-color: blueviolet;
+    border: 1px solid white; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-column-gap: 10px;  */
+    grid-template-rows: 1fr 1fr 1fr;  
+    /* grid-auto-rows: 10px; */
+    grid-gap: 10px;
+}
+.col{
+    /* width: 30%; */
+    /* height: 200px; */
+    background-color: yellowgreen;
+    color: white;
+    border: 1px solid white;
+}
+
+.row .col:nth-child(2){
+    background-color: goldenrod;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.row .col:nth-child(3){
+    background-color: silver;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

@@ -1,0 +1,67 @@
+/* external style sheet */
+/* select */
+/* Tag name| id| class */
+/* select Tag name| id| class {
+      property:value;
+      prooperty:value;   
+    
+}
+    */
+
+/* basic selectors */
+/* tag selectors */
+body{
+    background-color: #395e73 ;
+}
+h1{
+    color: #8c2056;
+}
+/* #->id */
+/* .->class */
+#head_two{
+    color: #290818;
+}
+.list-item{
+    color: azure;
+    text-decoration: underline;
+    /* line-through, under_line, over-line */
+    text-decoration-color: red ;
+}
+.item-odd{
+    text-decoration-color: silver;
+}
+.item-even{
+    text-decoration-color: darkgoldenrod;
+}
+.main-head{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 40px;
+}
+.items h1{
+    color: gold;
+
+}
+/* .under-line{
+    text-decoration: underline;
+}
+.over-line{
+    text-decoration: overline;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.over-line{
+    text-decoration: underline;
+} */
+/* seudo elements */
+.items h1:nth-child(1){
+    text-decoration: underline;
+}
+.items h1:nth-child(2){
+    text-decoration: overline;
+}
+.items h1:nth-child(3){
+    text-decoration: line-through;
+}
